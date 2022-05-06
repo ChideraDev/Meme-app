@@ -1,17 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import "./styles.css";
 import App from './App';
-import reportWebVitals from './reportWebVitals';
-
 ReactDOM.render(
+  
   <React.StrictMode>
     <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
+/*function greeting(name){
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const date = new Date();
+const hours= date.getHours()
+let timeOfDay
+
+  if (hours >= 4 && hours <= 12){
+    timeOfDay = "Morning";
+  } else if (hours >= 12 && hours < 17){
+    timeOfDay = "Afternoon";
+  } else if (hours >= 17 && hours < 20){
+    timeOfDay = "Evening";
+  } else{
+    timeOfDay = "Night";
+  }
+   return `Good ${timeOfDay}, ${name}`
+}
+console.log(greeting("Chidera"))*/
